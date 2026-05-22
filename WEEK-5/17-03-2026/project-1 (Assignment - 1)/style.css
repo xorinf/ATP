@@ -1,0 +1,95 @@
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Google Sans Flex", sans-serif;
+}
+
+/* FIX: Removed commas from margins */
+.container {
+  margin: 25px 100px; 
+  padding: 50px;
+  background-color: palevioletred;
+}
+
+main h4 {
+  margin-left: 105px;
+  color: black;
+  font-size: 24px; /* FIX: Changed from text-size-adjust */
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap; /* FIX: Allows cards to drop to next line if needed */
+  justify-content: space-around;
+  margin: 25px 0; /* Adjusted to fit inside container better */
+  text-align: center;
+  background-color: pink;
+}
+
+/* FIX: Added width to sections so they align as cards */
+.cards section {
+  flex: 1 1 200px; 
+  margin: 10px;
+  padding: 15px;
+  background: white; /* Makes text readable against pink */
+  border-radius: 8px;
+}
+
+.cards img {
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+  max-width: 100%; /* FIX: Prevents image overflow */
+  height: auto;
+}
+
+section button {
+  height: 30px;
+  width: 90px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Navigation */
+nav {
+  height: 67px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #e2e2e2;
+}
+
+nav ul {
+  width: 350px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+.search-box, .search-btn {
+  height: 30px;
+  padding: 0 5px;
+}
+
+main h1, main h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  margin: 25px 0; /* FIX: Removed commas */
+  background-color: grey;
+  color: white;
+}
+
+footer section {
+  margin: 20px;
+  flex: 1;
+}
